@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+:root {
+  --laranja: #FF6700;
+  --cinza-claro: #EBEBEB;
+  --cinza: #C0C0C0;
+  --azul: #3A6EA5;
+  --azul-escuro: #004E98;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: var(--azul-escuro);
+  padding: 10px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+
+/* Botão voltar */
+.voltar {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+}
+
+/* Nomes dos integrantes */
+.integrantes {
+  margin-left: 50px;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 16px;
+  text-align: center;
+  transition: transform 5s;
+  height: 300px;
+  width: 300px;
+}
+
+.card:hover {
+  transform: rotate(360deg);
+  transition: transform 1s;
+
+}
+
+.card img {
+  width: 200px;
+  height: 250px;
+  margin-bottom: 12px;
+  border-radius: 1000px;
+}
+
+.card h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+}

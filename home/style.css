@@ -1,0 +1,75 @@
+/* Paleta */
+:root {
+  --laranja: #FF6700;
+  --cinza-claro: #EBEBEB;
+  --cinza: #C0C0C0;
+  --azul: #3A6EA5;
+  --azul-escuro: #004E98;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: var(--cinza-claro);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  background: var(--azul-escuro);
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* Botão voltar */
+.voltar {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+}
+
+/* Nomes dos integrantes */
+.integrantes {
+  margin-left: 50px;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Centralizar menu no meio da tela */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo dos botões */
+.menu-centro {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-centro a {
+  background: var(--laranja);
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu-centro a:hover {
+  background: var(--azul);
+}

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    background-image: url('./bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #fdfdfd;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 8px #000000a2;
+    font-size: 4rem;
+}
+
+:root {
+  --laranja: #FF6700;
+  --cinza-claro: #EBEBEB;
+  --cinza: #C0C0C0;
+  --azul: #3A6EA5;
+  --azul-escuro: #004E98;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: var(--azul-escuro);
+  padding: 10px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+
+/* Botão voltar */
+.voltar {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+}
+
+/* Nomes dos integrantes */
+.integrantes {
+  margin-left: 50px;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#pageInput {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px #000000a2;
+}
+
+#searchBtn {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #219150;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background-color: #27ae60;
+    box-shadow: 0 2px 8px #000000a2;
+    ;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card {
+    background: #000000c5;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(89, 1, 243, 0.984) -5px 5px, rgba(249, 3, 3, 0.984) -10px 10px, rgb(243, 3, 223) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.card img {
+    height: 350px;
+    width: 100%;
+    border-radius: 100%;
+    transition: all 200ms ease-in-out;
+    object-fit: contain;
+}
+
+.card:hover {
+    box-shadow: rgb(22, 79, 250) -5px 5px, rgba(4, 58, 196, 0.884) -10px 10px, rgba(21, 2, 230, 0.932) -15px 15px, rgba(137, 2, 2, 0.94) -20px 20px, rgb(251, 4, 4) -25px 25px;
+}
+
+.card:hover h3 {
+    color: #0ce768;
+    text-shadow: 0 2px 8px #0ce768;
+}
+
+.card:hover img {
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #dddddd93;
+}
+
+.card:hover p {
+    color: #dddddd;
+}
+
+.card strong {
+    color: #0ce768;
+    font-weight: bold;
+}

@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+:root {
+  --laranja: #FF6700;
+  --cinza-claro: #EBEBEB;
+  --cinza: #C0C0C0;
+  --azul: #3A6EA5;
+  --azul-escuro: #004E98;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: var(--azul-escuro);
+  padding: 10px 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+}
+
+/* Botão voltar */
+.voltar {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+}
+
+/* Nomes dos integrantes */
+.integrantes {
+  margin-left: 50px;
+  display: flex;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.calculator {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  font-size: 2rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.button {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #d3d3d3;
+}
+
+.operator {
+  background-color: #4caf50;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.95);
+}
